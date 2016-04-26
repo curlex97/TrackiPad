@@ -1,0 +1,16 @@
+﻿<Window x:Class="TrackiPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackiPad"
+        mc:Ignorable="d"
+        Title="TCP сервер" Height="450" Width="600">
+    <Grid Background="#FF3B342A">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="180" Margin="210,106,0,0" VerticalAlignment="Top" Width="180" Source="button_s.png" MouseLeftButtonDown="image_MouseLeftButtonDown" MouseLeftButtonUp="image_MouseLeftButtonUp"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="35" Margin="179,350,0,0" VerticalAlignment="Top" Width="239" Source="textField.png"/>
+        <Label x:Name="label_Copy" Opacity="0.0" HorizontalContentAlignment="Center" Content="" HorizontalAlignment="Left" Margin="179,351,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="16" Width="239"/>
+        <Image x:Name="image2" Opacity="0" HorizontalAlignment="Left" Height="34" Margin="281,10,0,0" VerticalAlignment="Top" Width="34" Source="cl.png"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\bin\Release\TrackiPad.exe.config
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\bin\Release\TrackiPad.exe
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\bin\Release\TrackiPad.pdb
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.csprojResolveAssemblyReference.cache
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\MainWindow.g.cs
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\App.g.cs
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad_MarkupCompile.cache
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad_MarkupCompile.lref
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\MainWindow.baml
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.g.resources
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.Properties.Resources.resources
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.csproj.GenerateResource.Cache
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.exe
+C:\Users\arthur\Documents\Visual Studio 2015\Projects\TrackiPad\TrackiPad\obj\Release\TrackiPad.pdb

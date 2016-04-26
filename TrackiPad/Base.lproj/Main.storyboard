@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrackiPad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-3K-VXP">
+                                <rect key="frame" x="453" y="45" width="127" height="30"/>
+                                <color key="tintColor" red="0.89411764705882357" green="0.792156862745098" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Подключиться"/>
+                                <connections>
+                                    <action selector="connectButtonOnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USi-El-ucv"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wKj-a9-WqI">
+                                <rect key="frame" x="241" y="555" width="118" height="31"/>
+                                <color key="tintColor" red="0.89411764705882357" green="0.792156862745098" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="touchSliderOnTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="zHu-Z7-jWI"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0M-Bv-RBv">
+                                <rect key="frame" x="20" y="555" width="91" height="30"/>
+                                <color key="tintColor" red="0.89411764705882357" green="0.792156862745098" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Клавиатура"/>
+                                <connections>
+                                    <action selector="keyboardButtonOnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8HQ-q4-lH9"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="48O-BD-xsw">
+                                <rect key="frame" x="453" y="555" width="127" height="29"/>
+                                <segments>
+                                    <segment title="Звук"/>
+                                    <segment title="Яркость"/>
+                                </segments>
+                                <color key="tintColor" red="0.89411764705882357" green="0.792156862745098" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="rotateSegmentOnTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="GAk-kE-UpN"/>
+                                </connections>
+                            </segmentedControl>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i75-1Z-CMK">
+                                <rect key="frame" x="0.0" y="83" width="1024" height="600"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.14901960780000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TbW-eM-bOw" appends="YES" id="IFj-RA-nDE"/>
+                                    <outletCollection property="gestureRecognizers" destination="hYj-Aq-KxM" appends="YES" id="xtd-Ft-4nE"/>
+                                    <outletCollection property="gestureRecognizers" destination="VvZ-gY-lhk" appends="YES" id="7MH-ul-MLz"/>
+                                    <outletCollection property="gestureRecognizers" destination="wqM-vA-prk" appends="YES" id="o7Z-9U-8Z1"/>
+                                </connections>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-S4-p3a">
+                                <rect key="frame" x="233" y="12" width="1" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="roundStyleTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="AN1-Gc-s55"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID компьютера" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPy-bm-SFV">
+                                <rect key="frame" x="20" y="45" width="140" height="30"/>
+                                <color key="tintColor" red="0.89411764705882357" green="0.792156862745098" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17647058823529413" green="0.14901960784313725" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="R0M-Bv-RBv" secondAttribute="leading" id="1CX-Lo-wG5"/>
+                            <constraint firstItem="wKj-a9-WqI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="223" id="2QY-aC-l2S"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="R0M-Bv-RBv" secondAttribute="leading" id="3lq-CG-LcY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="48O-BD-xsw" secondAttribute="bottom" constant="17" id="8rw-ag-DwM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mjc-3K-VXP" secondAttribute="trailing" id="DDg-fU-js3"/>
+                            <constraint firstItem="48O-BD-xsw" firstAttribute="top" secondItem="mjc-3K-VXP" secondAttribute="bottom" constant="9" id="FBz-ac-EOw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bPy-bm-SFV" secondAttribute="leading" id="NND-Z2-j4I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R0M-Bv-RBv" secondAttribute="bottom" constant="15" id="Tng-yo-CGr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKj-a9-WqI" secondAttribute="bottom" constant="15" id="Vy3-qU-lcm"/>
+                            <constraint firstItem="R0M-Bv-RBv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="WFb-px-CPe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R0M-Bv-RBv" secondAttribute="trailing" constant="444" id="aZI-o0-qPk"/>
+                            <constraint firstItem="R0M-Bv-RBv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="cVW-yk-mYj"/>
+                            <constraint firstItem="R0M-Bv-RBv" firstAttribute="top" secondItem="bPy-bm-SFV" secondAttribute="bottom" constant="9" id="dk4-cm-Y0u"/>
+                            <constraint firstItem="mjc-3K-VXP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gby-bl-UUe"/>
+                            <constraint firstItem="wKj-a9-WqI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="hdE-a4-U4v"/>
+                            <constraint firstItem="R0M-Bv-RBv" firstAttribute="top" secondItem="bPy-bm-SFV" secondAttribute="bottom" constant="8" id="puJ-Hs-S9x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="48O-BD-xsw" secondAttribute="trailing" id="qgv-OJ-VmN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wKj-a9-WqI" secondAttribute="trailing" constant="223" id="x6h-Dc-Qcj"/>
+                            <constraint firstItem="bPy-bm-SFV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yay-xC-gDo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1CX-Lo-wG5"/>
+                                <exclude reference="3lq-CG-LcY"/>
+                                <exclude reference="WFb-px-CPe"/>
+                                <exclude reference="aZI-o0-qPk"/>
+                                <exclude reference="dk4-cm-Y0u"/>
+                                <exclude reference="puJ-Hs-S9x"/>
+                                <exclude reference="hdE-a4-U4v"/>
+                                <exclude reference="FBz-ac-EOw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="connectTextField" destination="bPy-bm-SFV" id="Brg-px-O3E"/>
+                        <outlet property="longPressGesture" destination="wqM-vA-prk" id="Srx-pc-aSR"/>
+                        <outlet property="pinchGesture" destination="VvZ-gY-lhk" id="yBr-Yg-7gb"/>
+                        <outlet property="rotateSegment" destination="48O-BD-xsw" id="6lR-Cr-kzF"/>
+                        <outlet property="rotationGesture" destination="hYj-Aq-KxM" id="Wdw-Kf-xhE"/>
+                        <outlet property="roundStyleTextField" destination="dcv-S4-p3a" id="oIe-AS-CvN"/>
+                        <outlet property="touchSlider" destination="wKj-a9-WqI" id="uoF-O5-mew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TbW-eM-bOw">
+                    <connections>
+                        <action selector="TapGestureAction:" destination="BYZ-38-t0r" id="4wb-LC-zlq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <rotationGestureRecognizer rotation="720" id="hYj-Aq-KxM">
+                    <connections>
+                        <action selector="RotationGestureRecognizer:" destination="BYZ-38-t0r" id="fxy-31-5ha"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="VvZ-gY-lhk">
+                    <connections>
+                        <action selector="pinchGestureRecognize:" destination="BYZ-38-t0r" id="TZQ-KP-C2K"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="wqM-vA-prk">
+                    <connections>
+                        <action selector="longPressGestureAction:" destination="BYZ-38-t0r" id="tvW-fT-qWT"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="288" y="290"/>
+        </scene>
+    </scenes>
+</document>
